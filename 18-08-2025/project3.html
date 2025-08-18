@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model Demonstration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    .box {
+      width: 150px;
+      padding: 30px;           /* Yellow part (Padding) */
+      border: 10px solid orange; /* Orange part (Border) */
+      margin: 30px auto;       /* Transparent space (Margin) */
+      background-color: deepskyblue; /* Blue part (Content) */
+      color: white;
+      font-weight: bold;
+    }
+
+    .components {
+      width: 300px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    .components ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .components li {
+      margin: 8px 0;
+    }
+
+    .square {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .margin { border: 1px dashed black; background: transparent; }
+    .border { background: orange; }
+    .padding { background: gold; }
+    .content { background: deepskyblue; }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Box Model Demonstration</h2>
+
+  <div class="box">Content</div>
+
+  <div class="components">
+    <h3>Box Model Components</h3>
+    <ul>
+      <li><span class="square margin"></span> <b>Margin</b> - Space outside the border (transparent)</li>
+      <li><span class="square border"></span> <b>Border</b> - Surrounds the padding and content</li>
+      <li><span class="square padding"></span> <b>Padding</b> - Space between border and content</li>
+      <li><span class="square content"></span> <b>Content</b> - Actual content of the box</li>
+    </ul>
+  </div>
+
+</body>
+</html>
